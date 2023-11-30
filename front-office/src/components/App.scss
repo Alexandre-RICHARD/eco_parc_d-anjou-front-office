@@ -1,0 +1,88 @@
+// To retrieve default styles and variables
+@import "@styles/index.scss";
+
+#app {
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+
+    .starter {
+        margin: auto;
+        max-width: 800px;
+
+        &-presentation {
+            margin: 8px 0;
+
+            .title {
+                font-size: 30px;
+                font-weight: 400;
+                margin: 8px;
+            }
+            .description {
+                text-align: left;
+            }
+
+            .starter-features-list {
+                text-align: left;
+                padding-left: 40px;
+
+                li {
+                    text-align: justify;
+                    font-size: 20px;
+                    list-style: disc;
+                }
+            }
+        }
+
+        &-demonstration {
+            margin: 8px 0;
+
+            .form-change-number-step {
+                font-size: 20px;
+                margin: 6px auto;
+                width: fit-content;
+                padding: 3px;
+                border: 1px solid #000000;
+
+                input {
+                    max-width: 100px;
+                    text-align: center;
+                    background-color: #dddddd;
+                    padding: 4px;
+                    margin-left: 10px;
+                }
+            }
+
+            .counter-click {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px;
+                gap: 0 10px;
+
+                .counter-value {
+                    padding: 3px 8px;
+                    box-shadow: 0px 0px 6px 2px black;
+                    border-radius: 4px;
+                    min-width: 60px;
+                }
+
+                .counter-button {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    margin: 0 6px;
+                    border-radius: 12px;
+                    font-size: 30px;
+                    font-weight: 500;
+                    border: 1px solid #888888;
+
+                    &:hover {
+                        background-color: #cccccc;
+                    }
+                }
+            }
+        }
+    }
+}
