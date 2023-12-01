@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(router);
 
 // Export of starting function
-export const start = () => app.listen(PORT, (): void => {
-    console.log(`Server works on http://localhost:${PORT}`);
-});
+export const start = () =>
+    app.listen(PORT, (): void => {
+        console.log(`Server works on http://localhost:${PORT}`);
+    });

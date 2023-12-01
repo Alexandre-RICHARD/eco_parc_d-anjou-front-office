@@ -1,2 +1,0 @@
-# Ignoring this file because EsLint and Prettier do abnormal things
-src/tests/wrapperProvider.tsx

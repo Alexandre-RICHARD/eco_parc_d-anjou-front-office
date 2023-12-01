@@ -1,7 +1,7 @@
 import {Request, Response} from "express";
 
 const mainController = {
-    "test": (_req: Request, res: Response): void => {
+    test: (_req: Request, res: Response): void => {
         try {
             res.json("Le serveur fonctionne");
         } catch (error) {
