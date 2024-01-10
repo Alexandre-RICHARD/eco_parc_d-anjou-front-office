@@ -1,3 +1,9 @@
+# ⚠️⚠️⚠️⚠️⚠️
+
+## Ce projet est à l'arrêt. Ce message est général à tous mes projets concernés et à un stade trop initial pour être intéressant. Actuellement arrêté en plein dans son développement, il est très probablement non-fonctionnel ou du moins, pas à 100%. Celui-ci en particulier est arrivé à un moment où j'ai eu plusieurs idées et j'ai juste pris le temps de créer ses répos et ses ébauches pour le reprendre plus tard.
+
+# ⚠️⚠️⚠️⚠️⚠️
+
 # Project Starter
 
 A project starter designed to streamline the setup process for new projects. Fork this repository to quickly initiate your projects without hassle.
@@ -100,7 +106,7 @@ Import {func1, func2, func3} from "myPackage"
 ```
 I would like warn on it.
 
-The way I would like it to be 
+The way I would like it to be
 ```js
 Import {
     func1,

@@ -2,10 +2,10 @@
 // allowing a store to be included while avoiding redeclaration
 // render(
 // <Provider store={store}>
-//      <Component />
+// <Component />
 // </Provider>
 // ) on each test
-import React, {PropsWithChildren} from "react";
+import React, {PropsWithChildren as child} from "react";
 import {render} from "@testing-library/react";
 import type {RenderOptions} from "@testing-library/react";
 import type {PreloadedState} from "@reduxjs/toolkit";
@@ -30,11 +30,14 @@ export const renderWithProviders = (
         ...renderOptions
     }: ExtendedRenderOptions = {}
 ) => {
-    const Wrapper = ({
-        children,
-    }: PropsWithChildren<NonNullable<unknown>>): JSX.Element => {
-        return <Provider store={store}>{children}</Provider>;
+
+    const Wrapper = ({children}: child<NonNullable<unknown>>): JSX.Element => {
+        return (
+            <Provider store={store}>
+                {children}
+            </Provider>
+        );
     };
 
-    return {store, ...render(ui, {wrapper: Wrapper, ...renderOptions})};
+    return {store, ...render(ui, {"wrapper": Wrapper, ...renderOptions})};
 };
